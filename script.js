@@ -3,7 +3,7 @@ let progress = document.getElementById("progress");
 let ctrlIcon = document.getElementById("ctrl-icon");
 
 if (isFinite(player.duration)) {
-    progress.max = player.duration;
+    progress.max = player.duration
     let duration = player.duration;
     console.log(duration);
 } else {
