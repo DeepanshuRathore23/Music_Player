@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="music-player">
+        <div id="menu"><img src="menu-icon.png" alt="" height="30px" width="30px"></div>
+        <div id="song">
+            <div id="song-icon">
+                <img src="diary_thumbnail.jpg" alt="" >
+            </div>
+        </div>
+        <div id="song-name">Dairy </div>
+        <div id="singer-name">Amrinder Gill</div>
+        <div id="audio">
+            <audio controls id="player">
+                <source src="Dairy.mp3" type="audio/mpeg">
+            </audio>
+        </div>        
+        <input type="range" value="0" id="progress">
+
+        <div id="controls">
+            <div id="backward">
+                <img src="backward-icon.png" alt="" height="20px" width="20px">
+            </div>
+            <div id="ctrl-icon" class="play-icon">
+                <img src=play-icon.png alt="" height="40px" width="40px">
+                <!-- <img src="pause-icon.png" alt="" height="40px" width="40px"> -->
+            </div>
+            <div id="forward">
+                <img src="forward-icon.png" alt="" height="20px" width="20px">         
+            </div>           
+        </div>       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

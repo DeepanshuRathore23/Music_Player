@@ -1,0 +1,167 @@
+*{
+    font-family: "general sans";
+}
+body{
+    background-color: #ffe0e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music-player{
+    height: 75vh;
+    width: 50vh;    
+    background-color: #fdecef;    
+    margin-top: 5%;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+#menu{
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+
+#menu img{
+    border-radius: 50%;
+}
+/* 
+#song{
+    height: 30vh;
+    width: 30vh;
+    background-color: white;
+    border: solid 10px rgb(246, 243, 243);
+    border-radius: 50%;    
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center; 
+    margin-top: 20%;
+    
+} */
+
+/* #song img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+    margin-left: auto;
+} */
+
+#song{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+}
+
+#song-icon{
+    height: 30vh;
+    width: 30vh;
+    background-color: white;
+    border: solid 10px rgb(246, 243, 243);
+    border-radius: 50%;
+    background-size: cover; 
+    background-position: center; 
+}
+#song-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#song-name{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+#singer-name{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+#audio{
+    display: none;
+    justify-content: center;
+}
+
+#progress{
+    -webkit-appearance: none;
+    display: flex;
+    width: 80%;
+    height: 4px;
+    background: #f53192;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #f53192;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#backward{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+}
+
+#ctrl-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+}
+
+#forward{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+}
+
+
