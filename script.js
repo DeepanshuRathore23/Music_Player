@@ -2,10 +2,15 @@ let player = document.getElementById("player");
 let progress = document.getElementById("progress");
 let ctrlIcon = document.getElementById("ctrl-icon");
 
-song.onloadedmetadata = function(){
-    progress.max = song.duration;
-    progress.value = song.currentTime;
+if (isFinite(player.duration)) {
+    progress.max = player.duration;
+    let duration = player.duration;
+    console.log(duration);
+} else {
+    console.log("Duration is not yet available.");
 }
+
+
 let play = false;
 
 function playPause(){
@@ -22,22 +27,13 @@ function playPause(){
         ctrlIcon.className="play-icon";
     }
 }
-progress.max=player.duration;
-console.log(progress.max)
-// if(song.play())
-function check(){
-    if(play){
-        console.log("chl rha hai chicha");
-    }
-    else{
-        console.log("ni clra bhai")
-    }
-}
+// progress.max=player.duration;
+
 setInterval(()=>{
     if(play){
         progress.value=player.currentTime;
     }
-},500);
+},100);
 
 
 ctrlIcon.addEventListener("click",playPause);
