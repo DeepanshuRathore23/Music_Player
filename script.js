@@ -38,3 +38,8 @@ setInterval(() => {
 }, 100);
 
 ctrlIcon.addEventListener("click", playPause);
+
+progress.addEventListener("click",function(){
+    console.log(progress.value);
+    console.log("clicked");
+})
