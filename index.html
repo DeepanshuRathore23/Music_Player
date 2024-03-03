@@ -11,32 +11,67 @@
 <body>
     <div id="music-player">
         <div id="menu"><img src="menu-icon.png" alt="" height="30px" width="30px"></div>
-        <div id="song">
-            <div id="song-icon">
-                <img src="diary_thumbnail.jpg" alt="" >
+        <div id="main">
+            <div id="song" >
+                <div id="song-icon">
+                    <img src="diary_thumbnail.jpg" alt="" >
+                </div>
             </div>
+            <div id="song-name">Diary </div>
+            <div id="singer-name">Amrinder Gill</div>
+            <div id="audio">
+                <audio controls id="player">
+                    <source src="Diary.mp3" type="audio/mpeg">
+                </audio>
+            </div>        
+            <input type="range" value="0" id="progress">
+    
+            <div id="controls">
+                <div id="backward">
+                    <img src="backward-icon.png" alt="" height="20px" width="20px">
+                </div>
+                <div id="ctrl-icon" class="play-icon">
+                    <img src=play-icon.png alt="" height="40px" width="40px">
+                    <!-- <img src="pause-icon.png" alt="" height="40px" width="40px"> -->
+                </div>
+                <div id="forward">
+                    <img src="forward-icon.png" alt="" height="20px" width="20px">         
+                </div>           
+            </div>               
         </div>
-        <div id="song-name">Diary </div>
-        <div id="singer-name">Amrinder Gill</div>
-        <div id="audio">
-            <audio controls id="player">
-                <source src="Dairy.mp3" type="audio/mpeg">
-            </audio>
-        </div>        
-        <input type="range" value="0" id="progress">
 
-        <div id="controls">
-            <div id="backward">
-                <img src="backward-icon.png" alt="" height="20px" width="20px">
+        <div id="song-list">
+            <div id="0" class="song-num">                
+                    <img id="sub-thumbnail" src="diary_thumbnail.jpg" alt="" height="50px" width="50px">
+                    <div id="details">
+                        <div id="name"> <b>Diary</b></div>
+                        <div id="singer">Amrinder Gill</div>
+                    </div>
+                    <div id="dot-menu"><img src="dots.png" alt="" height="30px"></div>
             </div>
-            <div id="ctrl-icon" class="play-icon">
-                <img src=play-icon.png alt="" height="40px" width="40px">
-                <!-- <img src="pause-icon.png" alt="" height="40px" width="40px"> -->
+
+            <div id="1" class="song-num">                
+                <img id="sub-thumbnail" src="offRoading_thumbnail.jpeg" alt="" height="50px" width="50px">
+                <div id="details">
+                    <div id="name"> <b>Off Roading</b></div>
+                    <div id="singer">Bhaini Khan</div>
+                </div>
+                <div id="dot-menu"><img src="dots.png" alt="" height="30px"></div>
             </div>
-            <div id="forward">
-                <img src="forward-icon.png" alt="" height="20px" width="20px">         
-            </div>           
-        </div>       
+
+            <div id="2" class="song-num">                
+                <img id="sub-thumbnail" src="12_Saal_thumbnail.jpeg" alt="" height="50px" width="50px">
+                <div id="details">
+                    <div id="name"> <b>12 Saal</b></div>
+                    <div id="singer">Bilal</div>
+                </div>
+                <div id="dot-menu"><img src="dots.png" alt="" height="30px"></div>
+            </div>
+
+            
+            
+        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
